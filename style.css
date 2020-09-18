@@ -1,0 +1,121 @@
+/* https://www.behance.net/gallery/96647749/R-State-Landing-Page */
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "GilroyBold";
+    src: url("gilroy-bold-cufonfonts/Gilroy-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("gilroy-bold-cufonfonts/Gilroy-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "GilroyRegular";
+    src: url('gilroy-bold-cufonfonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #2289FF;
+    --secondary-color: #314862;
+    --tertiary-color: #193F6A;
+    --darkgrey-color: #737373;
+    --lightblue-color: #728ba7;
+    --white-color: #fff;
+}
+
+html {
+    font-size: 10px;
+    font-family: "GilroyRegular", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--darkgrey-color);
+    font-weight: 600;
+}
+
+/* HEADER */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0 5rem;
+}
+
+.logo {
+    width: 18rem;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list-item:not(:last-child) {
+    margin-right: 4.5rem;
+}
+
+.nav-link {
+    font-family: "GilroyRegular", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--lightblue-color);
+    letter-spacing: .5px;
+    transition: color .5s;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20rem;
+    border-top-right-radius: 0;
+    cursor: pointer;
+    font-family: "GilroyRegular", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    outline: none;
+    display: block;
+    color: var(--white-color);
+    padding: 1.5rem 3rem;
+}
